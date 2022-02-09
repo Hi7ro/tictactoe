@@ -31,10 +31,18 @@ td {
   border: 1px solid black;
 }
 
+td:hover {
+  background-color: rgba(116, 4, 4, 0.568);
+}
+
 .shape {
   height: 80px;
   width: 80px;
   position: absolute;
   left: 26px;
   top: 26px;
+}
+
+.d-none {
+  display: none;
 }
