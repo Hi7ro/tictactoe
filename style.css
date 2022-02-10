@@ -1,3 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: gainsboro;
+}
+
+.playerBox {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.player-inactive {
+  opacity: 0.5;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player img {
+  height: 50px;
+  margin: 10px;
+}
+
 table {
   border-collapse: collapse;
 
@@ -5,6 +34,7 @@ table {
 
 tr {
   width: 400px;
+  position: relative;
 
 }
 
@@ -32,7 +62,7 @@ td {
 }
 
 td:hover {
-  background-color: rgba(116, 4, 4, 0.568);
+  background-color: rgba(116, 4, 4, 0.219);
 }
 
 .shape {
@@ -45,4 +75,19 @@ td:hover {
 
 .d-none {
   display: none;
+
+}
+
+.horizontal-line {
+  height: 5px;
+  width: 369px;
+  background-color: red;
+  position: absolute;
+  transform: scale(0.0);
+  transition: transform 225ms ease-in-out;
+}
+
+.make-vertical {
+  transform: rotate(90deg) scale(0.0);
+
 }
