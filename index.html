@@ -10,7 +10,8 @@
 </head>
 
 <body>
-
+  <button id="button" class="d-none" onclick="restart()">New Game</button>
+  <img id="game-over" class="game-over d-none" src="./Grafiken/game-over.png" alt="">
   <div class="playerBox">
     <div id="player-1" class="player">
       <img src="./Grafiken/circle.png" alt="">Player-1
@@ -21,16 +22,17 @@
   </div>
 
 
-  <div id="line-0" class="horizontal-line" style="top: 301px"></div>
-  <div id="line-1" class="horizontal-line" style="top: 438px;"></div>
-  <div id="line-2" class="horizontal-line" style="top: 573px;"></div>
-  <div id="line-3" class="horizontal-line make-vertical" style="top: 438px;left: 265px;"></div>
-  <div id="line-4" class="horizontal-line make-vertical" style="top: 438px;left: 129px;"></div>
-  <div id="line-5" class="horizontal-line make-vertical" style="top: 438px;right: 133px;"></div>
-  <div id="line-6" class="horizontal-line" style="top: 438px;left: 16px;transform: rotate(47deg) scale(0.0);"></div>
-  <div id="line-7" class="horizontal-line" style="top: 438px;left: 16px;transform: rotate(-47deg) scale(0.0);"></div>
+
 
   <table>
+    <div id="line-0" class="horizontal-line" style="top: 301px"></div>
+    <div id="line-1" class="horizontal-line" style="top: 438px;"></div>
+    <div id="line-2" class="horizontal-line" style="top: 573px;"></div>
+    <div id="line-3" class="horizontal-line make-vertical" style="top: 438px;left: 265px;"></div>
+    <div id="line-4" class="horizontal-line make-vertical" style="top: 438px;left: 129px;"></div>
+    <div id="line-5" class="horizontal-line make-vertical" style="top: 438px;right: 133px;"></div>
+    <div id="line-6" class="horizontal-line" style="top: 438px;transform: rotate(45deg)  scale(0) ;"></div>
+    <div id="line-7" class="horizontal-line" style="top: 438px;transform: rotate(-45deg)  scale(0);"></div>
     <tr>
       <td onclick="fillshape(0)">
         <img id="circle-0" class="shape d-none" src="./Grafiken/circle.png" alt="">
@@ -74,6 +76,7 @@
       </td>
     </tr>
   </table>
+
 
 
   <script src="main.js"></script>
